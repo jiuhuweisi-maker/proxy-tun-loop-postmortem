@@ -1,0 +1,23 @@
+# 本仓库只用于公开分享「脱敏复盘」。
+# 默认忽略一切文件，防止把工作区里的私钥 / 订阅 / 数据库误提交进来。
+# 新增可公开的文件时，请在下面显式放行（例如 !docs/english.md）。
+*
+!.gitignore
+!README.md
+!LICENSE
+
+# 以下类型无论上面如何放行，一律不进 Git
+*.pem
+*.key
+*.p12
+*.db
+*.sqlite*
+*.tar.gz
+*.tgz
+*.7z
+*.env
+*credential*
+*secret*
+*token*
+backups/
+node_modules/
